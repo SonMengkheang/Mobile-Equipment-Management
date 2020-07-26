@@ -34,16 +34,16 @@
                     android:layout_marginBottom="20dp"
                     android:text="Take your utility today..." />
 
-                 <ImageView
-                    android:id="@+id/navigationClass"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_add"
-                    android:layout_alignParentRight="true"
+<!--                 <ImageView-->
+<!--                    android:id="@+id/navigationClass"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_add"-->
+<!--                    android:layout_alignParentRight="true"-->
 
-                    >
+<!--                    >-->
 
-                </ImageView>
+<!--                </ImageView>-->
 
             </RelativeLayout>
 
