@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigationJoinClass"
+        android:title="Join class" />
+
+    <item
+        android:id="@+id/navigationCreateClass"
+        android:title="Create class" />
+
+</menu>
