@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Equipment Management.iml" filepath="$PROJECT_DIR$/Equipment Management.iml" group="Equipment Management" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mobile-Equipment-Management.iml" filepath="$PROJECT_DIR$/.idea/modules/Mobile-Equipment-Management.iml" group="Mobile-Equipment-Management" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Mobile-Equipment-Management-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Mobile-Equipment-Management-app.iml" group="Mobile-Equipment-Management/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Equipment Management/app" />
     </modules>
   </component>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "675548080351",
+    "firebase_url": "https://equipment-management-f765f.firebaseio.com",
+    "project_id": "equipment-management-f765f",
+    "storage_bucket": "equipment-management-f765f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675548080351:android:c135d72ac438cf8621a16a",
+        "android_client_info": {
+          "package_name": "com.appsnipp.equipmentmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675548080351-pe753nc5gai1otdujgronfujf4gdjfb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZLaWH0SJxbxZMLytpsivVIsm91XsduBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675548080351-pe753nc5gai1otdujgronfujf4gdjfb2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
