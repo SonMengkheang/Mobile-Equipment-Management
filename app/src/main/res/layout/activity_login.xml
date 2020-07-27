@@ -61,6 +61,7 @@
         </LinearLayout>
 
         <EditText
+            android:id="@+id/txtEmail"
             android:layout_width="280dp"
             android:layout_height="45dp"
             android:hint="Email"
@@ -71,6 +72,7 @@
             android:inputType="textEmailAddress"
             android:background="@drawable/btn"/>
         <EditText
+            android:id="@+id/txtPassword"
             android:layout_width="280dp"
             android:layout_height="45dp"
             android:hint="Password"
@@ -81,12 +83,12 @@
             android:inputType="textPassword"
             android:background="@drawable/btn"/>
         <Button
+            android:id="@+id/btnLogin"
             android:layout_width="280dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:text="Log In"
-            android:onClick="In"
             android:textAllCaps="false"
             android:background="@drawable/joinbtn"
             android:textColor="@color/whitecolor"/>

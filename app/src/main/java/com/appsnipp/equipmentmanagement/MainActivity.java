@@ -3,6 +3,8 @@ package com.appsnipp.equipmentmanagement;
 import android.os.Build;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+
+import com.appsnipp.equipmentmanagement.fragments.JoinClassFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import com.google.android.material.navigation.NavigationView;
@@ -39,10 +41,13 @@ public class MainActivity extends AppCompatActivity
             switch (item.getItemId()) {
                 case R.id.navigationMyProfile:
                     showFragement( new AccountFragment());
-                case R.id.navigationMyCourses:
+                    return true;
+                case R.id.navigationJoinClass:
+                    showFragement( new JoinClassFragment());
                     return true;
                 case R.id.navigationHome:
                     showFragement( new HomeFragment());
+                    return true;
                 case  R.id.navigationSearch:
                     return true;
                 case  R.id.navigationMenu:
@@ -53,11 +58,6 @@ public class MainActivity extends AppCompatActivity
             return false;
         }
     };
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.master_class_navigation, menu);
-        return true;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
