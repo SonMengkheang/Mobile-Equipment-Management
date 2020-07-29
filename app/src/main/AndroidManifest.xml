@@ -3,6 +3,7 @@
     package="com.appsnipp.equipmentmanagement">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_logo"
         android:label="@string/app_name"
@@ -15,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"/>
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RegisterActivity1"/>
+        <activity android:name=".LoginActivity1"/>
         <activity
             android:theme="@style/AppTheme.NoActionBar"
             android:name="com.appsnipp.equipmentmanagement.MainActivity">

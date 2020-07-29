@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "id": "5633531",
+      "username": "pech",
+      "gender": "male",
+      "email": "user@user.com",
+      "phoneNumber": "095 4389090",
+      "address": "Chroy Chongva , Phnom Penh",
+      "password": "34252343"
+    },
+    {
+      "id": "23423",
+      "username": "chiven",
+      "gender": "male",
+      "email": "chiven@yahoo.com",
+      "phoneNumber": "095 43423423",
+      "address": "Tek Laak2 , Phnom Penh",
+      "password": "312412313"
+    },
+    {
+      "id": "3324",
+      "username": "Simey",
+      "gender": "female",
+      "email": "simey1234@gmail.com",
+      "phoneNumber": "095 4389090",
+      "address": "Chroy Chongva , Phnom Penh",
+      "password": "12345678"
+    }
+  ],
+
+  "classes": [
+    {
+      "id": "0341342",
+      "lectureName":"Meas Sothearath",
+      "classname": "Math",
+      "classCode": "it-013",
+      "section": "2:30pm-4:00pm",
+      "room": "A001"
+    },
+    {
+      "id": "02342",
+      "lectureName":"In Saovisal",
+      "classname": "Physic",
+      "classCode": "math-901",
+      "section": "7:30am-9:00am",
+      "room": "D304"
+    },
+    {
+      "id": "033423",
+      "lectureName":"Son Mengkheang",
+      "classname": "English",
+      "classCode": "phy-542",
+      "section": "4:30pm-6:00pm",
+      "room": "D304"
+    },
+    {
+      "id": "34234",
+      "lectureName":"Hel Pech",
+      "classname": "Bio",
+      "classCode": "be-403",
+      "section": "1:30pm-3:00pm",
+      "room": "D304"
+    }
+    ],
+    "item": [
+      {
+        "id": "01890",
+        "nameItem": "Projector",
+        "amount": "10",
+        "imgUrl": "https://image2.pricedekho.com/p/94/4/54/1513954/3563215-infocus-in-114-dlp-business-projector-1024-x-768-picture-large.jpg",
+        "description": "That item is user to show slide on the baord"
+      },
+      {
+        "id": "01342",
+        "nameItem": "Remote control",
+        "amount": "6",
+        "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/71TWoqULJhL._AC_SL1500_.jpg",
+        "description": "That item is user to open or off the airconditioner"
+      },
+      {
+        "id": "342234",
+        "nameItem": "Display Port",
+        "amount": "3",
+        "imgUrl": "https://cf.shopee.ph/file/4d765ad1d45a4cea1943448ff6c7b04c",
+        "description": "That item is user to connect from computer or other device to projector for display slide on the board"
+      }
+    ]
+    }

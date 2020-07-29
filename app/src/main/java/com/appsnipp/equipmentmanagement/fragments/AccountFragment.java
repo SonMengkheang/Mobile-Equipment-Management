@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import com.appsnipp.equipmentmanagement.R;
 
-public class AccountFragment extends Fragment {
+public class AccountFragment  extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

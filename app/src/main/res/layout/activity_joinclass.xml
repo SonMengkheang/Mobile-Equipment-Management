@@ -53,7 +53,7 @@
             android:textSize="20sp"
             android:textAllCaps="false"
             android:textColor="@color/whitecolor"/>
-<!--            android:onClick="JoinClass"-->
+<!--         android:onClick="JoinClass"-->
             
     </RelativeLayout>
 

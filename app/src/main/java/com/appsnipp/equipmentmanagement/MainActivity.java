@@ -2,29 +2,29 @@ package com.appsnipp.equipmentmanagement;
 
 import android.os.Build;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-
-import com.appsnipp.equipmentmanagement.fragments.JoinClassFragment;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import com.google.android.material.navigation.NavigationView;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.appsnipp.equipmentmanagement.fragments.AccountFragment;
+import com.appsnipp.equipmentmanagement.fragments.HistoryFragment;
 import com.appsnipp.equipmentmanagement.fragments.HomeFragment;
-import com.appsnipp.equipmentmanagement.R;
+import com.appsnipp.equipmentmanagement.fragments.ItemFragment;
+import com.appsnipp.equipmentmanagement.fragments.JoinClassFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -90,11 +90,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    public void showFragement(Fragment fragment) {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_content, fragment);
-        transaction.commit();
-    }
+
 
     @Override
     public void onBackPressed() {
@@ -112,13 +108,15 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_history) {
+            showFragement(new HistoryFragment());
 
-        } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_manage) {
+//        } else if (id == R.id.nav_gallery) {
+//
+//        } else if (id == R.id.nav_slideshow) {
+//
+//        } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_dark_mode) {
             //code for setting dark mode
@@ -156,4 +154,12 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    public void classID(View view) {
+        showFragement(new ItemFragment());
+    }
+    public void showFragement(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_content, fragment);
+        transaction.commit();
+    }
 }

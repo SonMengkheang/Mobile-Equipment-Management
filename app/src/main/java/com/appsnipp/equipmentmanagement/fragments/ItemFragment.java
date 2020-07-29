@@ -10,11 +10,10 @@ import androidx.fragment.app.Fragment;
 
 import com.appsnipp.equipmentmanagement.R;
 
-public class JoinClassFragment extends Fragment {
-
+public class ItemFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_joinclass, container, false);
+        return inflater.inflate(R.layout.activity_item, container, false);
     }
 }

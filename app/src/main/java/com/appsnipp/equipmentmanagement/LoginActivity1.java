@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import static com.google.firebase.auth.FirebaseAuth.getInstance;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity1 extends AppCompatActivity {
     ImageView img;
     EditText txtEmail , txtPassword;
     Button btnLogin;
@@ -48,29 +48,29 @@ public class LoginActivity extends AppCompatActivity {
                 String password = txtPassword.getText() . toString() .trim() ;
 
                 if(TextUtils.isEmpty(email)){
-                    Toast.makeText(LoginActivity.this,"Please Input Email",Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity1.this,"Please Input Email",Toast.LENGTH_LONG).show();
                     return;
                 }
                 if (TextUtils.isEmpty(password)){
-                    Toast.makeText(LoginActivity.this,"Please Input Password",Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity1.this,"Please Input Password",Toast.LENGTH_LONG).show();
                     return;
                 }
 
                 if (password.length()<6){
-                    Toast.makeText(LoginActivity.this,"Password is too short",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity1.this,"Password is too short",Toast.LENGTH_SHORT).show();
                 }
 
 
                 mAuth.signInWithEmailAndPassword(email,password)
-                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(LoginActivity1.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()){
                                     startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                                    Toast.makeText(LoginActivity.this,"Login Completed",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(LoginActivity1.this,"Login Completed",Toast.LENGTH_SHORT).show();
 
                                 }else{
-                                    Toast.makeText(LoginActivity.this,"Login Failed",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(LoginActivity1.this,"Login Failed",Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
@@ -84,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void goback(View view) {
-        Intent ic = new Intent(LoginActivity.this, RegisterActivity1.class);
+        Intent ic = new Intent(LoginActivity1.this, RegisterActivity1.class);
         startActivity(ic);
     }
 

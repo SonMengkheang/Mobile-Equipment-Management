@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.appsnipp.equipmentmanagement.MainActivity"
+    android:background="#000"
+    style="@style/parent.contentLayout">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mainTitle"
+                    style="@style/viewParent.headerText.homeCardContent"
+                    android:text="Item Menu"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/subTitle"
+                    style="@style/viewParent.headerText.contentText"
+                    android:layout_below="@+id/mainTitle"
+                    android:layout_marginBottom="20dp"
+                    android:text="All of Items..."
+                    android:textColor="@android:color/white"/>
+
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/itemName15"
+                        android:textColor="#fdb501"
+                        android:textSize="30dp"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="Projector" />
+
+                    <TextView
+                        android:id="@+id/Code15"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemName15"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Code : "
+                        android:textColor="#fdb501"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/itemCode15"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemName15"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15dp"
+                        android:textColor="#EE6A90B5"
+                        android:text="IT-003" />
+
+                    <TextView
+                        android:id="@+id/desc15"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemCode15"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:text="Description"
+                        android:textColor="#fdb501"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/desc15"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Study nature, love nature,\nclose to nature"
+                        android:textColor="#EE6A90B5"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/itemImage15"
+                        style="@style/homeCardImage"
+                        android:layout_width="155dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="-1dp"
+                        android:src="@drawable/img_projector" />
+                    <Button
+                        android:id="@+id/btnBorrow15"
+                        android:layout_width="100dp"
+                        android:layout_height="36dp"
+                        android:layout_below="@+id/itemImage15"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/home_gradient_maths"
+                        android:textColor="#fff"
+                        android:text="Borrow">
+                    </Button>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/itemName13"
+                        android:textColor="#fdb501"
+                        android:textSize="30dp"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="HDMI" />
+
+                    <TextView
+                        android:id="@+id/Code13"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemName13"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Code : "
+                        android:textColor="#fdb501"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/itemCode13"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemName13"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15dp"
+                        android:textColor="#EE6A90B5"
+                        android:text="IT-003" />
+
+                    <TextView
+                        android:id="@+id/desc13"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemCode13"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:text="Description"
+                        android:textColor="#fdb501"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/desc13"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Study nature, love nature,\nclose to nature"
+                        android:textColor="#EE6A90B5"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/itemImage13"
+                        style="@style/homeCardImage"
+                        android:layout_width="155dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="-1dp"
+                        android:src="@drawable/img_hdmi" />
+                    <Button
+                        android:id="@+id/btnBorrow13"
+                        android:layout_width="100dp"
+                        android:layout_height="36dp"
+                        android:layout_below="@+id/itemImage13"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/home_gradient_maths"
+                        android:textColor="#fff"
+                        android:text="Borrow">
+                    </Button>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/itemName14"
+                        android:textColor="#fdb501"
+                        android:textSize="30dp"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="Remote" />
+
+                    <TextView
+                        android:id="@+id/Code14"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemName14"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Code : "
+                        android:textColor="#fdb501"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/itemCode14"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemName14"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15dp"
+                        android:textColor="#EE6A90B5"
+                        android:text="IT-003" />
+
+                    <TextView
+                        android:id="@+id/desc14"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemCode14"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:text="Description"
+                        android:textColor="#fdb501"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/desc14"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Study nature, love nature,\nclose to nature"
+                        android:textColor="#EE6A90B5"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/itemImage14"
+                        style="@style/homeCardImage"
+                        android:layout_width="154dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="-1dp"
+                        android:src="@drawable/img_remote_control" />
+                    <Button
+                        android:id="@+id/btnBorrow1"
+                        android:layout_width="100dp"
+                        android:layout_height="36dp"
+                        android:layout_below="@+id/itemImage14"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/home_gradient_maths"
+                        android:textColor="#fff"
+                        android:text="Borrow">
+                    </Button>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/itemName1"
+                        android:textColor="#fdb501"
+                        android:textSize="30dp"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="HDMI" />
+
+                    <TextView
+                        android:id="@+id/Code1"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemName1"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Code : "
+                        android:textColor="#fdb501"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/itemCode1"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemName1"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15dp"
+                        android:textColor="#EE6A90B5"
+                        android:text="IT-003" />
+
+                    <TextView
+                        android:id="@+id/desc1"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemCode1"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:text="Description"
+                        android:textColor="#fdb501"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/desc1"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Study nature, love nature,\nclose to nature"
+                        android:textColor="#EE6A90B5"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/itemImage16"
+                        style="@style/homeCardImage"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="-1dp"
+                        android:src="@drawable/img_hdmi" />
+                    <Button
+                        android:id="@+id/btnBorrow16"
+                        android:layout_width="100dp"
+                        android:layout_height="36dp"
+                        android:layout_below="@+id/itemImage16"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/home_gradient_maths"
+                        android:textColor="#fff"
+                        android:text="Borrow">
+                    </Button>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/itemName12"
+                        android:textColor="#fdb501"
+                        android:textSize="30dp"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="Display Port" />
+
+                    <TextView
+                        android:id="@+id/Code12"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemName12"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Code : "
+                        android:textColor="#fdb501"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/itemCode12"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemName12"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15dp"
+                        android:textColor="#EE6A90B5"
+                        android:text="IT-003" />
+
+                    <TextView
+                        android:id="@+id/desc12"
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/itemCode12"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="15dp"
+                        android:text="Description"
+                        android:textColor="#fdb501"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        style="@style/viewParent.headerText.contentText"
+                        android:layout_below="@id/desc12"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Study nature, love nature,\nclose to nature"
+                        android:textColor="#EE6A90B5"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/itemImage12"
+                        style="@style/homeCardImage"
+                        android:layout_width="155dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="-1dp"
+                        android:src="@drawable/img_display_port" />
+                    <Button
+                        android:id="@+id/btnBorrow12"
+                        android:layout_width="100dp"
+                        android:layout_height="36dp"
+                        android:layout_below="@+id/itemImage12"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/home_gradient_maths"
+                        android:textColor="#fff"
+                        android:text="Borrow">
+                    </Button>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

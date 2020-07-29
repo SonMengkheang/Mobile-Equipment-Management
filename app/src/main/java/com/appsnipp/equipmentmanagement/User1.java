@@ -1,11 +1,11 @@
 package com.appsnipp.equipmentmanagement;
 
-public class User {
+public class User1 {
 
     public String Username , Email ,  Gender , PhoneNumber , Address ,Profile ;
 
 
-    public User(String username, String email, String gender, String phoneNumber, String address, String profile) {
+    public User1(String username, String email, String gender, String phoneNumber, String address, String profile) {
         Username = username;
         Email = email;
         Gender = gender;
@@ -13,4 +13,5 @@ public class User {
         Address = address;
         Profile = profile;
     }
+
 }
